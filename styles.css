@@ -9,16 +9,84 @@
 html{
     font-size: 62.5%;
 }
+.ham-menu{
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    z-index: 1;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.line{
+    width: 100%;
+    height: 0.2rem;
+    background-color: #fff;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
 .header{
     width:100%;
     height: 100vh;
+    position: relative;
 }
 .img-wrapper{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
 }
 .img-wrapper img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    opacity: 0.8;    
+}
+.banner{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+.banner h2{
+    font-family: 'Josefin Slab', serif;
+    font-size: 6rem;
+    font-weight: 300;
+    color: #fcf9f9ee;
+    text-shadow: 0 0.3rem #000000d2;
+    line-height: 6rem;
+    letter-spacing: 0.2rem;   
+}
+.banner h1{
+    font-family: 'Baloo Da 2', serif;
+    font-size: 4rem;
+    font: 300;
+    color: #fcf9f9ee;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem #000000d2 ;
+    margin-bottom: 3rem;
+}
+.banner span{
+    font-family: 'Josefin Slab', serif;
+    font-size: 6rem;
+    font-weight: 300;
+    text-shadow: 0 0.3rem #000000d2;
+    color: hsla(2, 92%, 48%, 0.966);
+    text-transform: uppercase;
+}
+.banner button{
+    height: 4rem;
+    width: 15rem;
+    background-color: #565c565d;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: snow;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0 0 30px #1a1919;
+    opacity: 0.6;
+    transition: 0.5s;
 }
