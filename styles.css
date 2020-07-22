@@ -20,12 +20,62 @@ html{
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    transition: right 0.7s;
+}
+.change .ham-menu{
+    right: 33rem;
 }
 .line{
     width: 100%;
     height: 0.2rem;
     background-color: #fff;
     box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+.change .line{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.change .line-1{
+    transform: rotate(45deg)
+    translate(0.3rem, 0.8rem);
+}
+.change .line-2{
+    opacity: 0;
+    visibility: hidden;
+}
+.change .line-3{
+    transform: rotate(-45deg)
+    translate(0.3rem, -0.8rem)
+}
+.ham-menu span{
+    position: absolute;
+    left: 5rem;
+    width: 10rem;
+    height: 4rem;
+    background-color: #e2b646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-family: 'Baloo Da 2', serif;
+    letter-spacing: 0.2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+.change .ham-menu:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+.ham-menu span::before{
+    content: "";
+    position: absolute;
+    border-left:1rem solid transparent;
+    border-right:1rem solid #e2b646;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    top: 50%;
+    left: -2rem;
+    transform: translateY(-50%);
 }
 .header{
     width:100%;
