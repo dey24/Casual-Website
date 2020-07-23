@@ -112,7 +112,7 @@ html{
     left: 15%;
 }
 .banner h2{
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 6rem;
     font-weight: 300;
     color: #fcf9f9ee;
@@ -134,7 +134,7 @@ html{
     animation: moveBanner 1s 0.7s forwards;
 }
 .banner span{
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 6rem;
     font-weight: 300;
     text-shadow: 0 0.3rem #000000d2;
@@ -192,7 +192,7 @@ button:hover{
 .menu h2{
     font-size: 1.3rem;
     font-family: 'Baloo Da 2', serif;
-    line-height: 20rem;
+    line-height: 10rem;
     letter-spacing: 0.2rem;
     color: #747415;
 }
@@ -323,7 +323,7 @@ button:hover{
     margin-bottom: 1rem;
 }
 .service-text{
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 1.6rem;
     text-align: center;
 }
@@ -342,7 +342,7 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 5rem 20rem 5rem;
+    padding: 0 5rem 10rem 5rem;
 }
 .cards-wrapper{
     display: flex;
@@ -355,13 +355,90 @@ button:hover{
     height: 45rem;
     margin-right: 5rem;
     margin-left: 5rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.8);
+    border-radius: 10rem;
+    position: relative;
 }
 .card-img-wrapper{
     width: 100%;
     height: 100%;
+    background-color: #262626;
+    border-radius: 10rem;
 }
 .card-img-wrapper img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.8;
+    border-radius: 10rem;
+    transition: opacity 0.5s;
+}
+.card:hover .card-img-wrapper img{
+    opacity: 0.5;
+}
+.card-info{
+    position: absolute;
+    bottom: 0;
+    left: 3rem;
+    padding: 2rem;
+    text-shadow: 0 0.2rem 0.5rem rgba(238, 65, 65, 0.993);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s all;
+
+}
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility:visible;
+}
+.html-h2{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Baloo Da 2',serif;
+    color: #0a0a0a;  
+}
+.html-p{
+    font-size: 1.5rem;
+    font-family: 'Mulish', sans-serif;
+    color: #0a0a0a;
+    line-height: 1.6rem;
+}
+.css-h2{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Baloo Da 2',serif;
+    color: #eafa04fb;
+}
+.css-p{
+    font-size: 1.2rem;
+    font-family: 'Mulish', sans-serif;
+    color: #faf6f6fa;
+    line-height: 1.6rem;
+}
+.js-h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Baloo Da 2',serif;
+    color: #faf6f6fa;
+}
+.js-p{
+    font-size: 1.3rem;
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.6rem;
+    color: #faf6f6fa;
+}
+.card-info button{
+    width: 10rem;
+    height: 3rem;
+    background-color: #c29525;
+    border: none;
+    font-family: 'Baloo Da 2';
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #eee;
+    border-radius: 0.7rem;
+    box-shadow: 0 .1rem .8rem rgba(245, 6, 6, 0.8);
+    cursor: pointer;
 }
