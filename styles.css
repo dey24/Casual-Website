@@ -44,7 +44,7 @@ html{
 }
 .change .line-3{
     transform: rotate(-45deg)
-    translate(0.3rem, -0.8rem)
+    translate(0.3rem, -0.8rem);
 }
 .ham-menu span{
     position: absolute;
@@ -179,6 +179,7 @@ button:hover{
     right: -45rem;
     background-color: white;
     transition: right 0.5s;
+    z-index: 1;
 }
 .change .sidebar{
     right: 0;
