@@ -458,3 +458,8 @@ button:hover{
     background-color: #fff;
     box-shadow:0 3rem 7rem #000000cc;
 }
+.contact-wrapper{
+    width: 35%;
+    background: linear-gradient( rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9),url(night.jpg) center, no-repeat);
+    background-size: cover;
+}
