@@ -455,11 +455,94 @@ button:hover{
     width: 60%;
     height: 75rem;
     display: flex;
-    background-color: #fff;
     box-shadow:0 3rem 7rem #000000cc;
 }
-.contact-wrapper{
+.contact-left{
     width: 35%;
-    background: linear-gradient( rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9),url(night.jpg) center, no-repeat);
+    background: linear-gradient( rgba(15, 15, 15, 0.4), rgba(22, 22, 22, 0.9)),url(night.jpg) center no-repeat;
     background-size: cover;
+}
+.contact-right{
+    width: 65%;
+    background-color: #eee;
+    padding: 10rem 10rem 10rem 10rem;
+}
+.contact-heading{
+    font-family: 'Baloo Da 2', serif;
+    font-size: 6rem;
+    font-weight: lighter;
+    color: #272727;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.contact-right form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-group{
+    position: relative;
+}
+.field{
+    width: 45rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: .2rem dashed #636363;
+    margin: 3rem 0;
+    padding: 1rem, 1rem, 1rem, 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.6rem;
+    color: #4b4b4b;
+}
+.input-group input{
+    height: 4rem;
+}
+.input-group textarea{
+    max-width: 45rem;
+    max-height: 7rem;
+}
+.field:focus{
+    border-bottom-style: solid;
+}
+.input-group label{
+    position: absolute;
+    left: 0;
+    font-family: 'Baloo Da 2', serif;
+    font-size: 1.8rem;
+    color: #4b4b4b;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+.input-label {
+    bottom: 3rem;
+}
+.message {
+    bottom: 4.5rem;
+}
+.field:focus ~ label{
+    transform: translateY(-3rem);
+    font-size: 1.2rem;
+}
+.submit-btn{
+    width: 25rem;
+    height: 5rem;
+    background-color: #c29525;
+    color: #eee;
+    border: none;
+    border-radius: 10%;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+    margin-top: 2rem;
+    font-family: 'Mulish',sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-shadow:0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.submit-btn:hover{
+    opacity: 0.7;
+    background-color: rgba(37, 35, 1, 0.788);
 }
