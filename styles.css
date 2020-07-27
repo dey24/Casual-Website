@@ -591,18 +591,3 @@ button:hover{
 .scroll-btn:hover{
     opacity: 0.5;
 }
-@media(max-width: 1500px)
-    .about-me-img-wrapper{
-        grid-row: 3/-1;
-    }
-    .card{
-        width: 25rem;
-    }
-    .contact-wrapper{
-        width: 68%;
-        height: 65rem;
-    }
-    .footer-content{
-        width: 80%;
-    }
-}
