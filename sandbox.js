@@ -25,3 +25,11 @@ document.getElementById('discover').addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+document.getElementById('about').addEventListener('click', () => {
+    const aboutItElement = document.getElementById('about-me');
+    console.log(aboutItElement)
+    aboutItElement.scrollIntoView({
+        behavior: 'smooth'
+    });
+});
